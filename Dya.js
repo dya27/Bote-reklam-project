@@ -10,7 +10,7 @@ if (message.content === 'wara') {
  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 if (message.member.voiceChannel) { 
 
-message.member.voiceChannel.join(لێرە دابنێ) //ئایدی ڤۆیسی گشتی
+message.member.voiceChannel.join(871345092521263138) 
 
 .then(connection => { 
 
@@ -21,7 +21,7 @@ message.member.voiceChannel.join(لێرە دابنێ) //ئایدی ڤۆیسی گ
 
 } else { 
 
-message.reply('**<a:9FAF7C0CF0104A2F979F1263DF55D91A:855230044258828328> پێویستە تۆ لە ڤۆیسەکە بیت **'); 
+message.reply('**ئەگەر بەخۆت نێیە ڤۆیس ئەمنیش نایێم😂**'); 
 
 } 
 
@@ -43,7 +43,7 @@ client.on("ready", () => {
   setInterval(function() {
     let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
     client.user.setActivity(STREAMING, {
-      type: "created By ",
+      type: "Playing ",
       url: "https://www.twitch.tv/faith"
     });
   }, 3000);
@@ -104,25 +104,19 @@ if(message.channel.type === 'dm') {
 
 if (message.content.startsWith("https://discord.gg/")) {
     
-  message.author.send(` دانرا تۆش ڕیکلامەکە بکە link `) // لینکی سێرڤەری خۆت لیرە دابنی 
+  message.author.send(` دانرا تۆش ڕیکلامەکە بکە https://discord.gg/XdANjDJswX `) // لینکی سێرڤەری خۆت لیرە دابنی 
     
-  client.channels.get("ئایدی ژووری ریکلامت دابنێ").send(
+  client.channels.get("872546602185789491").send(
 `ریکلامی ئەم سێرڤەرە نێردرا لەلایان ئەم بەرێزە: <@${message.author.id}> ✅ 
 ${message.content}`)
 }
     }
         })
 
-
-
-
 client.on('ready', () => {
 console.log(`ON ${client.guilds.size} Servers`);
 console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Rose 💙`) 
+client.user.setGame(`ڕیکلامەکە بنێرە بۆمن دایدەنێم☑️`) 
 });
 
-
-
-
-client.login("تۆکینی بۆتی ریکلامەکەت");// Your Token
+client.login("");// Your Token
